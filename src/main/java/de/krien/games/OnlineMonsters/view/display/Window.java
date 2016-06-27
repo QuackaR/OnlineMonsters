@@ -33,6 +33,8 @@ public class Window {
         // Blending aktivieren
         GL11.glEnable(GL11.GL_BLEND);
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+        // 2D Texturen aktivieren
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
         // Projektionsmatrix bearbeiten
         GL11.glMatrixMode(GL11.GL_PROJECTION);
         // Projektionsmatrix auf Matrix-Stack sichern

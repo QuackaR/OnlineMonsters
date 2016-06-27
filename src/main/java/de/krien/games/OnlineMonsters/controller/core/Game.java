@@ -11,7 +11,7 @@ public class Game {
 
 
     public Game() {
-        gameState = EGameState.MENU;
+        gameState = EGameState.PLAY;
     }
 
     public void init() {
