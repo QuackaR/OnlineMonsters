@@ -3,11 +3,11 @@ package de.krien.games.OnlineMonsters.controller.play;
 import de.krien.games.OnlineMonsters.controller.core.IGameState;
 import de.krien.games.OnlineMonsters.model.player.Player;
 import de.krien.games.OnlineMonsters.model.util.vector.Vector2i;
-import de.krien.games.OnlineMonsters.model.world.Chunk;
+import de.krien.games.OnlineMonsters.model.world.Map;
 
 public class Play implements IGameState {
 
-    Chunk chunk;
+    Map chunk;
     Player player;
 
     public Play() {
@@ -26,8 +26,8 @@ public class Play implements IGameState {
     @Override
     public void draw() {
         if(chunk == null) {
-            chunk = new Chunk();
-            chunk.init(new Vector2i(1, 1));
+            chunk = new Map();
+            chunk.init();
         }
         chunk.draw();
         if(player == null) {
